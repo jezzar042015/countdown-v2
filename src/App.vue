@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black text-white h-screen courier-prime-regular">
+  <div class="bg-green-400 text-shadow-lg text-white h-screen courier-prime-regular">
     <div class="flex h-full justify-center items-center text-[22vw]">
       <div v-if="timerStore.hasRemainingHours" class="flex items-center">
         <div class="text-center">{{ timerStore.hoursTens }}</div>
