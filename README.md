@@ -1,33 +1,26 @@
-# countdown-v2
+# KH Countdown Timer
 
-This template should help get you started developing with Vue 3 in Vite.
+### Usage
+This timer can be integrated into an OBS preview for Kingdom Hall meetings. Simply add the app URL as a Browser Source in OBS.
 
-## Recommended IDE Setup
+The timer’s background is set to green by default, making it easy to apply chroma key and render it transparent.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+![alt text](image.png)
 
-## Type Support for `.vue` Imports in TS
+### Setting the Meeting Times
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+If no meeting times are set, the default times are 2:00 PM and 6:00 PM. To change the default times, add them to the URL:
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
+```
+?targets=#meeting times separated by commas#
 ```
 
-### Compile and Hot-Reload for Development
+For example:
 
-```sh
-npm run dev
+```
+https://jezzar042015.github.io/countdown-v2/?targets=2PM,9AM,6PM
 ```
 
-### Type-Check, Compile and Minify for Production
+![alt text](image-1.png)
 
-```sh
-npm run build
-```
+The app will automatically count down to the nearest time specified in the targets list.
